@@ -1,0 +1,4 @@
+[scidb]
+name=SciDB
+baseurl=http://downloads.paradigm4.com/centos6.3/14.8/
+gpgcheck=0
