@@ -14,3 +14,5 @@ export SCIDBCLUSTER=democluster
 export SCIDBUSERSW=$SCIDBUSERHOME/sw
 export SCIDBUSERIPYNB=$SCIDBUSERHOME/examples/iPythonNotebook
 export SCIDBUSERR=$SCIDBUSERHOME/examples/R
+
+export SCIDBUSERRLIB=$SCIDBUSERHOME/R/x86_64-redhat-linux-gnu-library/3.1

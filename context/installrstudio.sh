@@ -22,10 +22,10 @@ local({r <- getOption(\"repos\")
 " > $SCIDBUSERHOME/.Rprofile
 chown $SCIDBUSER:$SCIDBUSER $SCIDBUSERHOME/.Rprofile
 
-#mkdir $SCIDBUSERHOME/R
-#echo "export R_LIBS=$SCIDBUSERHOME/R">>$SCIDBUSERHOME/.bashrc
+mkdir -p $SCIDBUSERRLIB
+echo "export R_LIBS=$SCIDBUSERRLIB">>$SCIDBUSERHOME/.bashrc
 
-#chown $SCIDBUSER:$SCIDBUSER $SCIDBUSERHOME/R
+chown $SCIDBUSER:$SCIDBUSER $SCIDBUSERRLIB
 
 echo -e "
 install.packages('devtools')
@@ -36,6 +36,6 @@ chown $SCIDBUSER:$SCIDBUSER /tmp/inst_scidbr.R
 
 su - $SCIDBUSER -c "Rscript /tmp/inst_scidbr.R"
 
-mkdir $SCIDBUSERR
+mkdir -p $SCIDBUSERR
 cp $CONTEXTPATH/simple.R $SCIDBUSERR/
 chown -R $SCIDBUSER:$SCIDBUSER $SCIDBUSERR

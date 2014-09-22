@@ -1,10 +1,10 @@
 #SciDB Tutorial Over Docker
 
 #when testing only
-FROM centos:centos6scidb148base
+#FROM centos:centos6scidb148base
 
 #when building from scratch
-#FROM centos:centos6
+FROM centos:centos6
 
 MAINTAINER Yushu Yao <yao.yushu@gmail.com>
 
