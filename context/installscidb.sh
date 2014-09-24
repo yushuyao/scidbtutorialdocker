@@ -10,6 +10,7 @@ yum install -y $CONTEXTPATH/shim-$SCIDBVERSION-1.x86_64.rpm
 
 useradd $SCIDBUSER
 echo -e "demo\ndemo" | (passwd --stdin $SCIDBUSER)
+echo "scidb ALL=(ALL) ALL" >> /etc/sudoers
 
 mkdir $SCIDBDATA
 mkdir $SCIDBTMP

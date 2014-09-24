@@ -48,4 +48,3 @@ echo "--- setupext.py~       2014-08-26 02:38:13.000000000 +0100
 python setup.py build
 python setup.py install
 
-mkdir -p $SCIDBUSERIPYNB

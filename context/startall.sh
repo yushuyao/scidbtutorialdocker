@@ -31,4 +31,7 @@ service rstudio-server start
 
 su scidb -c "$CONTEXTPATH/startipython_asscidb.sh"
 
-/bin/bash
+if [ ! "$STARTSHELL" == "" ]
+then  /bin/bash
+else sleep infinity
+fi
