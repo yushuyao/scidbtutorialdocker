@@ -11,7 +11,12 @@ This docker container provides an one-click way to setup a 1-node SciDB for demo
 ##Start Docker Container
 Simply do:
 ```
-docker run -i -t yyao/scidbtutorialdocker
+docker run -d yyao/scidbtutorialdocker
+```
+Or for debugging purposes you can set the STARTSHELL environment variable to go into a bash shell:
+```
+docker run -e STARTSHELL=TRUE -i -t yyao/scidbtutorialdocker
+
 ```
 
 ##Access the services
