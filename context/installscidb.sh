@@ -12,6 +12,9 @@ useradd $SCIDBUSER
 echo -e "demo\ndemo" | (passwd --stdin $SCIDBUSER)
 echo "scidb ALL=(ALL) ALL" >> /etc/sudoers
 
+cp $CONTEXTPATH/bash_profile $SCIDBUSERHOME/.bash_profile
+chown $SCIDBUSER:$SCIDBUSER $SCIDBUSERHOME/.bash_profile
+
 mkdir $SCIDBDATA
 mkdir $SCIDBTMP
 chown $SCIDBUSER:$SCIDBUSER $SCIDBDATA
